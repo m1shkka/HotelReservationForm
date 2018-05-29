@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Головна сторінка</title>
+	<link href="index.css" rel="stylesheet" type="text/css">
+
+
+
+
+</head>
+
+<body>
+
+	<header>
+		<h1>Hotel reservation form</h1>
+	</header>
+
+	<center>
+		<form>
+			<div id="fio">
+
+				<p>First name
+					<input type="text" name="name" id="name1">
+				</p>
+
+				<p>Last name
+					<input type="text" name="surname" id="surname">
+				</p>
+
+				<p>Secret key
+					<input type="password" name="password" id="key">
+				</p>
+
+				<p>Sex
+
+					<input type="radio" name="Sex" value="Male">Male
+					<input type="radio" name="Sex" value="Female">Female
+				</p>
+
+				<div id="myDiv">
+					<label>Born date</label>
+					<!-- <input type="date" name="calendar" min="1950-05-23" id="birthsday"> -->
+					
+					<select name="month" id="monthOfBirthday" onchange="buildDaysDropDown()">
+					<!-- <option disabled>Pick month</option> -->
+					<option value="1">January</option>
+					<option value="2">February</option>
+					<option value="3">March</option>
+					<option value="4">April</option>
+					<option value="5">May</option>
+					<option value="6">June</option>
+					<option value="7">July</option>
+					<option value="8">August</option>
+					<option value="9">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				</select>
+				<select id="dayid" name="days"></select>
+
+
+				</div>
+
+
+				<p>Custom service:</p>
+				<div>
+					<input type="checkbox" name="Breakfast" class="check-botton">Breakfast
+				</div>
+				<div>
+					<input type="checkbox" name="Skii transfer" class="check-botton">Skii transfer
+				</div>
+				<div>
+					<input type="checkbox" name="Gym and pool bass" class="check-botton">Gym and pool bass
+				</div>
+				<div>
+					<input type="checkbox" name="Fridge" class="check-botton">Fridge
+				</div>
+				<div>
+					<input type="checkbox" name="Skii pass" class="check-botton">Skii pass
+				</div>
+
+				<p>Available rooms
+					<select>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>5</option>
+  <option>8</option>
+	</select> &nbsp;&nbsp;&nbsp;Adult count
+					<select>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+				</p>
+
+				<div class="datuu">
+					<p>Reservation dates
+						<input type="date" name="calendar" min="2018-05-22" max="2021-05-22" id="departing" class="departing"> -
+						<input type="date" name="calendar" min="2018-05-23" max="2021-05-23" id="returning" class="returning">
+					</p>
+				</div>
+				<p id="proba">How you heared about us?
+					<div class="border">
+						<div>
+							<input type="radio" name="HearedAboutUs" value="HearedAboutUs1">Advert
+						</div>
+						<div>
+							<input type="radio" name="HearedAboutUs" value="HearedAboutUs2">Friend suggested
+						</div>
+						<div>
+							<input type="radio" name="HearedAboutUs" value="HearedAboutUs2">Other
+						</div>
+					</div>
+				</p>
+
+				<center>
+
+					<input type="button" class="center" onclick="validate(this.form)" id="submitBtn" value="Submit reservation">
+
+				</center>
+
+			</div>
+		</form>
+	</center>
+
+
+</body>
+<script type="text/javascript" src="HRF.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+</html>

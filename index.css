@@ -1,0 +1,45 @@
+header {
+    text-align: center;
+    font-size: 15px;
+    font-style: oblique;
+}
+
+#fio {
+    font-style: italic;
+    font-size: 15px;
+    border: 10px double #808080;
+    width: 500px;
+    padding-top: 10px;
+}
+
+.border {
+    border: 4px double black;
+    background: lightblue;
+    padding: 1px;
+    position: relative;
+    margin-left: 15%;
+    margin-top: 20px;
+    width: 140px;
+}
+
+#proba {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.center {
+    margin-bottom: 10px;
+}
+
+.inputik {
+    width: 30px;
+}
+
+body {
+    background: #fff;
+}
+
+#dayid {
+    width: 40px;
+}
